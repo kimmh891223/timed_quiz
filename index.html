@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="reset" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script>
+		function refreshPage() {
+			location.reload();
+		}
+	</script>
+</head>
+<body>
+    <header class="mainTitleContainer" id="clear">
+        <h1 id="mainTitle">Mental Math Speed Quiz</h1>
+    </header>
+    <section class="instruction" id="clear">
+        <p id="instruction">Try to answer these mental math questions as fast as you can. <br> Choosing a wrong answer will reduce time by 5 seconds. <br> Good Luck!</p>
+    </section>
+    <div class = "highscoreTabContainer">
+        <h5 id="highscoreTab">VIEW HIGHSCORES</h5>
+    </div>
+    <div class= "timerTabContainer">
+        <h5 id="timerTab">TIME:&nbsp;<span id="time"></span></h5>
+    </div>
+    <div class = "startButtonContainer" id="clear">
+        <h3 id="startButton">Start Quiz!</h3>
+    </div>
+    <div class = "highscoreRecordContainer">
+        <ul id="highscoreRecord">
+    </div>
+    <div class = "tryAgainContainer">
+        <h3 id="tryAgain" onclick="refreshPage()">Back to Home</h3>
+    </div>
+    <div class = "cwContainer">
+        <h4 id="correct">Correct</h4>
+        <h4 id="wrong">Wrong</h4>
+    </div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
